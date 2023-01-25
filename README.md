@@ -2,6 +2,7 @@
 [![Platform](https://img.shields.io/badge/Platform-Android-brightgreen.svg)](#)
 [![Platform](https://img.shields.io/badge/Language-Kotlin-yellowgreen.svg)](#)
 
+Here is a small code snippet of the project's "Login" functionality
 
 Project tech stacks:
 
