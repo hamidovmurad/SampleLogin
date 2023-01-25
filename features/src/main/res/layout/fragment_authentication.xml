@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ViewAnimator
+        android:id="@+id/vaPage"
+        android:layout_width="match_parent"
+        android:background="@drawable/img_login"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_in"
+                android:textColor="@color/title"
+                android:textAppearance="@style/TextRegular_35_42"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_23sdp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:background="@drawable/background_bluelight8"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:inputType="textEmailAddress"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:textAppearance="@style/TextRegular_18_21"
+                    android:paddingHorizontal="@dimen/_6sdp"
+                    android:textColorHint="@color/gray2"
+                    android:textColor="@color/title"
+                    android:background="@color/blue_light"
+                    android:hint="@string/email"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5sp"
+                    android:background="@color/gray2"/>
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:inputType="textPassword"
+                    android:textColor="@color/title"
+                    android:textAppearance="@style/TextRegular_18_21"
+                    android:paddingHorizontal="@dimen/_6sdp"
+                    android:background="@color/blue_light"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:textColorHint="@color/gray2"
+                    android:hint="@string/password"/>
+
+
+
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/authentication"
+                android:layout_marginHorizontal="@dimen/_56sdp"
+                android:text="@string/sign_in"
+                style="@style/ButtonGold"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/partnerships"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginHorizontal="@dimen/_56sdp"
+                android:text="@string/apply_for_partner"
+                style="@style/ButtonStroke"/>
+
+
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/loadingLayout"
+            layout="@layout/layout_loading_page" />
+
+
+    </ViewAnimator>
+
+</layout>

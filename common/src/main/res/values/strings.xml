@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sample Login</string>
+
+    <string name="list">List</string>
+    <string name="floor_plan">Floor plan</string>
+    <string name="more">More</string>
+
+    <string name="sign_in">Sign in</string>
+    <string name="apply_for_partner">Apply for partner</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+
+    <string name="enter_password">Enter password</string>
+    <string name="false_email">Email is incorrect</string>
+    <string name="not_define">Not defined</string>
+
+
+</resources>

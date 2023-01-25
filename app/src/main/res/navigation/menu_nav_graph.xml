@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/ListFragment"
+    android:id="@+id/menu_nav_graph">
+
+
+    <fragment
+        android:id="@+id/ListFragment"
+        android:name="com.app.features.list.view.ListFragment"
+        android:label="ListFragment"
+        tools:layout="@layout/fragment_list" />
+
+    <fragment
+        android:id="@+id/FloorPlanFragment"
+        android:name="com.app.features.floor_plan.view.FloorPlanFragment"
+        android:label="FloorPlanFragment"
+        tools:layout="@layout/fragment_floor_plan" />
+
+
+    <fragment
+        android:id="@+id/MoreMenuFragment"
+        android:name="com.app.features.more_menu.view.MoreMenuFragment"
+        android:label="MoreMenuFragment"
+        tools:layout="@layout/fragment_more_menu" />
+
+
+</navigation>

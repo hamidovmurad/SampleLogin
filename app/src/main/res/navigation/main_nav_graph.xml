@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/AuthenticationFragment">
+
+    <action
+        android:id="@+id/action_log_out"
+        app:destination="@id/AuthenticationFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@+id/main_nav_graph"
+        app:popUpToInclusive="true" />
+
+
+    <action
+        android:id="@+id/action_to_AuthenticationFragment"
+        app:destination="@id/AuthenticationFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@+id/main_nav_graph"
+        app:popUpToInclusive="true"/>
+
+
+    <action
+        android:id="@+id/action_to_BottomMenuFragment"
+        app:destination="@id/BottomMenuFragment"
+        app:launchSingleTop="true"
+        app:popUpTo="@+id/main_nav_graph"
+        app:popUpToInclusive="true" />
+
+
+    <fragment
+        android:id="@+id/AuthenticationFragment"
+        android:name="com.app.features.authentication.view.AuthenticationFragment"
+        android:label="AuthenticationFragment"
+        tools:layout="@layout/fragment_authentication" />
+
+    <fragment
+        android:id="@+id/BottomMenuFragment"
+        android:name="com.app.sample_login.BottomMenuFragment"
+        android:label="BottomMenuFragment"
+        tools:layout="@layout/fragment_bottom_menu" />
+
+</navigation>

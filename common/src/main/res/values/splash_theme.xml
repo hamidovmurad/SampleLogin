@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Splash Screen Theme. -->
+    <style name="Theme.AppSplash" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+        <item name="postSplashScreenTheme">@style/Theme.Main</item>
+        <item name="android:statusBarColor" >@color/blue_dark</item>
+        <item name="android:navigationBarColor">@color/blue_dark</item>
+        <item name="android:forceDarkAllowed" >false</item>
+        <item name="android:windowBackground">@drawable/ic_splash_full</item>
+
+    </style>
+</resources>

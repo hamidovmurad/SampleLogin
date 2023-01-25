@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="Theme.Main" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/title</item>
+        <item name="colorPrimaryVariant">@color/title</item>
+        <item name="colorOnPrimary">@color/title</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/title</item>
+        <item name="colorSecondaryVariant">@color/title</item>
+        <item name="colorOnSecondary">@color/title</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/blue_light</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:navigationBarColor">@color/blue_light</item>
+        <item name="android:windowBackground">@color/blue_dark</item>
+        <item name="android:forceDarkAllowed">false</item>
+
+        <item name="bottomSheetDialogTheme">@style/BottomSheetDialog</item>
+    </style>
+
+
+
+    <!--    progressbar-->
+    <style name="ProgressBarStyle" parent="android:Widget.Holo.ProgressBar">
+        <item name="android:layout_height">36dp</item>
+        <item name="android:layout_width">36dp</item>
+        <item name="android:minHeight">10dp</item>
+        <item name="android:maxHeight">20dp</item>
+        <item name="android:indeterminateTint">@color/gold</item>
+    </style>
+    <!--    progressbar-->
+
+    <!--    bottomsheet style-->
+    <style name="BottomSheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/bottomSheetStyleWrapper</item>
+    </style>
+
+    <style name="bottomSheetStyleWrapper" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <!--    bottomsheet style-->
+
+
+    <style name="ButtonGold" parent="ButtonBase">
+        <item name="android:background">@drawable/background_gold8</item>
+        <item name="backgroundTint">@color/gold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ButtonStroke" parent="ButtonBase">
+        <item name="android:background">@drawable/background_white8_stroke</item>
+        <item name="android:textColor">@color/title</item>
+    </style>
+
+    <style name="ButtonBase" parent="TextAppearance.AppCompat.Button">
+        <item name="android:layout_height">@dimen/_34sdp</item>
+        <item name="android:layout_width">match_parent</item>
+        <!--        <item name="android:minWidth">180dp</item>-->
+        <item name="android:textAppearance">@style/TextRegular_21_25</item>
+        <item name="android:gravity">center</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:paddingStart">@dimen/_18sdp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingEnd">@dimen/_18sdp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+
+    <!--    text font style-->
+    <style name="TextRegular_35_42">
+        <item name="android:textSize">@dimen/_26sdp</item>
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="lineHeight">@dimen/_30sdp</item>
+    </style>
+
+    <style name="TextRegular_21_25">
+        <item name="android:textSize">@dimen/_15sdp</item>
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="lineHeight">@dimen/_18sdp</item>
+    </style>
+
+    <style name="TextRegular_18_21">
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="lineHeight">@dimen/_15sdp</item>
+    </style>
+
+    <!--    text font style-->
+
+
+</resources>

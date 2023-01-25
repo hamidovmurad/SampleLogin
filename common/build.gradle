@@ -1,0 +1,98 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+    id 'dagger.hilt.android.plugin'
+}
+
+
+android {
+    compileSdk 33
+
+    defaultConfig {
+        minSdk 23
+        targetSdk 33
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+
+    buildFeatures {
+        dataBinding true
+    }
+}
+
+dependencies {
+
+    api 'androidx.core:core-ktx:1.7.0'
+    api 'androidx.appcompat:appcompat:1.5.1'
+    api 'com.google.android.material:material:1.6.1'
+    api 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+
+
+    //Timber
+    api "com.jakewharton.timber:timber:5.0.1"
+
+    //Constraint Layout
+    api 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+
+    //Splash Screen
+    implementation "androidx.core:core-splashscreen:1.0.0"
+
+    def navVersion = "2.5.2"
+    api "androidx.navigation:navigation-fragment-ktx:$navVersion"
+    api "androidx.navigation:navigation-ui-ktx:$navVersion"
+
+
+    //Firebase
+    api platform('com.google.firebase:firebase-bom:29.3.0')
+    api 'com.google.firebase:firebase-messaging-ktx'
+    api 'com.google.firebase:firebase-crashlytics-ktx'
+    api 'org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.6.1'
+
+
+    //Coroutines
+    def coroutinesVersion = "1.6.0"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion"
+
+    //Dagger - Hilt
+    implementation "com.google.dagger:hilt-android:$hiltVersion"
+    kapt "com.google.dagger:hilt-android-compiler:$hiltVersion"
+    kapt("androidx.hilt:hilt-compiler:1.0.0")
+
+    // Gson
+    api 'com.google.code.gson:gson:2.9.1'
+
+
+    //paging
+    api "androidx.paging:paging-runtime:3.1.1"
+
+    //One time sms
+    api 'com.google.android.gms:play-services-auth:20.3.0'
+    api 'com.google.android.gms:play-services-auth-api-phone:18.0.1'
+
+
+    //glide
+    api 'com.github.bumptech.glide:glide:4.14.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+
+
+}

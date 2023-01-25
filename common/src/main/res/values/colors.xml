@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bottom_menu_background">@color/blue_light</color>
+    <color name="background">@color/blue_light</color>
+    <color name="title">@color/white</color>
+    <color name="button">@color/white</color>
+
+
+
+    <color name="blue_dark">#151924</color>
+    <color name="blue_light">#242A38</color>
+    <color name="yellow">#EBAC26</color>
+    <color name="orange">#E2773B</color>
+    <color name="gold">#D2A838</color>
+    <color name="red">#DC303C</color>
+    <color name="red_dark">#B60F0F</color>
+    <color name="green">#35A62B</color>
+    <color name="green_dark">#1E7626</color>
+    <color name="white">#DDDDDD</color>
+    <color name="gray">#737A89</color>
+    <color name="gray2">#818181</color>
+
+
+</resources>
